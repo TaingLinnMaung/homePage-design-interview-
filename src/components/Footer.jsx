@@ -52,7 +52,7 @@ const Footer = () => {
             />
           </svg>
         </h1>
-        <p className='w-[550px] text-gray-400'>Write anything here something about yourself to showcase what actually you doing or targeting etc.</p>
+        <p className='w-[450px] text-gray-400'>Write anything here something about yourself to showcase what actually you doing or targeting etc.</p>
         <div className={`${buttonOutsideClass} p-[1px] mt-10`}>
             <button className={`${buttonInsideClass} text-black px-3 py-1 text-md font-semibold`}>send us a message</button>
         </div>
