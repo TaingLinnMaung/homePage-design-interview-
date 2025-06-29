@@ -1,5 +1,5 @@
 import { Home, User } from "lucide-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import {
   buttonInsideClass,
   buttonOutsideClass,
@@ -7,8 +7,12 @@ import {
 } from "../style/style";
 
 const NavBar = ({ isFooter }) => {
-  const [selectedTab, setSelectedTab] = useState(null);
-
+  const [selectedWidth, setSelectedWidth] = useState(null);
+  const [selectedLeft,setSelectedLeft] = useState(null)
+ const homeIcon = useRef()
+ const aboutRef=useRef()
+ const projectRef = useRef()
+ const contactMeRef= useRef()
   return (
     <div>
       <nav
@@ -123,25 +127,44 @@ const NavBar = ({ isFooter }) => {
           </div>
         ) : (
           <div className="p-[1.2px] rounded-[50px] bg-gradient-to-r from-[var(--secondary)] to-[var(--primary)]">
-            <div className="flex items-center bg-[#1c1c1c] text-white rounded-[60px] px-4 py-[7px] pe-3 space-x-4 text-lg">
-              <div className="bg-gray-700 px-3 py-1 rounded-full">
-                <Home className="w-4 h-4" />
+            <div className="relative flex items-center bg-[#1c1c1c] text-white rounded-[60px] px-4 py-[7px] pe-3 space-x-4 text-lg">
+              <div className={` h-8 absolute bg-gray-500 rounded-full transition-all duration-300`} style={{width:`${selectedWidth}px`,left:`${selectedLeft}px`}}></div>
+              <div className=" px-3 py-1 rounded-full" ref={homeIcon}  onClick={() => {
+                  setSelectedLeft(homeIcon.current.offsetLeft)
+                  setSelectedWidth(homeIcon.current.offsetWidth)
+                }} >
+                <Home className=" relative w-4 h-4"/>
               </div>
               <a
                 href="#about"
-                className="relative hover:text-[var(--primary)] px-2 rounded-2xl"
+                className="relative hover:text-gray-300 px-2 rounded-2xl"
+                ref={aboutRef}
+               onClick={() => {
+                  setSelectedLeft(aboutRef.current.offsetLeft)
+                  setSelectedWidth(aboutRef.current.offsetWidth)
+                }}
+                
               >
                 About
               </a>
               <a
                 href="#projects"
-                className="hover:text-[var(--primary)] px-2 rounded-2xl"
-              >
+                className=" relative hover:text-gray-300 px-2 rounded-2xl"
+                ref={projectRef}
+  onClick={() => {
+                  setSelectedLeft(projectRef.current.offsetLeft)
+                  setSelectedWidth(projectRef.current.offsetWidth)
+                }}              >
                 Projects
               </a>
               <a
                 href="#contact"
-                className="hover:text-[var(--primary)] px-2 rounded-2xl"
+                className="relative hover:text-gray-300 px-2 rounded-2xl"
+                ref={contactMeRef}
+                            onClick={() => {
+                  setSelectedLeft(contactMeRef.current.offsetLeft)
+                  setSelectedWidth(contactMeRef.current.offsetWidth)
+                }}
               >
                 Contact me
               </a>
