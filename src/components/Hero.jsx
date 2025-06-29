@@ -20,7 +20,7 @@ export default function HeroSection() {
     />
   ));
 
-  // Grid size
+
   const gridUnitWidth = 100 / cols;
   const gridUnitHeight = 100 / rows;
 
@@ -28,11 +28,11 @@ export default function HeroSection() {
     <>
       <section className={`${mainPadding} relative w-full mt-8  text-white flex items-center justify-center `}>
         <div className="relative w-[100%]  h-[80vh] border border-neutral-800 rounded-md">
-          {/* Grid lines */}
+       
           {verticalLines}
           {horizontalLines}
 
-          {/* Sparkles */}
+     
           <div
             className={`absolute left-[.4%] top-[57%] -translate-x-1/2 -translate-y-1/2 text-white text-4xl`}
           >
@@ -42,7 +42,7 @@ export default function HeroSection() {
             ✦
           </div>
 
-          {/* Content exactly framed by the grid */}
+ 
           <div
             className="absolute bg-[#111] translate-x-[.5px] translate-y-[.5px] text-center shadow-lg px-8 py-10"
             style={{

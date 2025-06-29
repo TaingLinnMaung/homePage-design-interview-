@@ -1,5 +1,5 @@
 import { Home, User } from "lucide-react";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   buttonInsideClass,
   buttonOutsideClass,
@@ -7,18 +7,20 @@ import {
 } from "../style/style";
 
 const NavBar = ({ isFooter }) => {
-  const [selectedWidth, setSelectedWidth] = useState(null);
-  const [selectedLeft,setSelectedLeft] = useState(null)
+  const [selectedWidth, setSelectedWidth] = useState(40);
+  const [selectedLeft,setSelectedLeft] = useState(16)
  const homeIcon = useRef()
  const aboutRef=useRef()
  const projectRef = useRef()
  const contactMeRef= useRef()
+
+
   return (
     <div>
       <nav
         className={`${mainPadding} flex items-center justify-between px-1 py-5  text-white`}
       >
-        {/* Left: Logo */}
+   
         <div className="flex items-center gap-2">
           {/* Replace this with your actual logo */}
           <svg
@@ -80,9 +82,7 @@ const NavBar = ({ isFooter }) => {
           <span className="text-xl font-bold">znisa</span>
         </div>
 
-        {/* Middle: Menu */}
-
-        {/* Menu with gradient border */}
+ 
         {isFooter ? (
           <div className="p-[1px] rounded-[50px] bg-gradient-to-r from-[var(--secondary)] to-[var(--primary)]">
             <div className="flex items-center bg-[#1c1c1c] text-white rounded-[60px] px-6 py-[7px]  space-x-4 text-lg">
@@ -172,7 +172,7 @@ const NavBar = ({ isFooter }) => {
           </div>
         )}
 
-        {/* Right: Buttons */}
+     
         <div className="flex items-center gap-1">
           <div className={`${buttonOutsideClass}`}>
             <button

@@ -5,10 +5,11 @@ import Process from "../components/Process";
 import Project from "../components/Project";
 import Testimonial from "../components/Testimonial";
 import Footer from "../components/Footer";
+import { mainPadding } from "../style/style";
 
 const HomePage = () => {
   return (
-    <div className=" bg-[#101111] text-white">
+    <div className=" bg-[#101111] text-white pb-20">
       {/* hello */}
       <NavBar></NavBar>
       <HeroSection></HeroSection>
@@ -17,6 +18,7 @@ const HomePage = () => {
       <Testimonial></Testimonial>
       <Footer></Footer>
       <NavBar isFooter={true}></NavBar>
+      
     </div>
   );
 };
