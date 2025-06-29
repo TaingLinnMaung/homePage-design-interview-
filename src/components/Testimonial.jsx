@@ -32,7 +32,7 @@ const Testimonial = () => {
           {/* box */}
           <div className="relative">
 
-          <div className="  border border-gray-400 bg-[#101111] rounded-2xl px-4 py-6 w-[450px] bg-gradient-to-r inline-block from-[var(--secondary)]  to-[var(--primary)]">
+          <div className="  border border-gray-400 bg-[#101111] rounded-2xl px-4 py-6 w-[100%] bg-gradient-to-r inline-block from-[var(--secondary)]  to-[var(--primary)]">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-3">
                 <div className="h-9 w-9 bg-gray-500 rounded-full"></div>
@@ -91,7 +91,7 @@ const Testimonial = () => {
               the{" "}
             </p>
           </div>
-          <div className="absolute top-0 translate-x-[2px] translate-y-[2px] bg-[#101111] rounded-2xl px-4 py-6 w-[450px]">
+          <div className="absolute top-0 translate-x-[2px] translate-y-[2px] bg-[#101111] rounded-2xl px-4 py-6 w-[100%]">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-3">
                 <div className="h-9 w-9 bg-gray-500 rounded-full"></div>
@@ -155,7 +155,7 @@ const Testimonial = () => {
           {/* box */}
           <div className="relative">
 
-          <div className="  border border-gray-400 bg-[#101111] rounded-2xl px-4 py-6 w-[450px] bg-gradient-to-r inline-block from-[var(--secondary)]  to-[var(--primary)]">
+          <div className="  border border-gray-400 bg-[#101111] rounded-2xl px-4 py-6 w-[100%] bg-gradient-to-r inline-block from-[var(--secondary)]  to-[var(--primary)]">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-3">
                 <div className="h-9 w-9 bg-gray-500 rounded-full"></div>
@@ -214,7 +214,7 @@ const Testimonial = () => {
               the{" "}
             </p>
           </div>
-          <div className="absolute top-0 translate-x-[2px] translate-y-[2px] bg-[#101111] rounded-2xl px-4 py-6 w-[450px]">
+          <div className="absolute top-0 translate-x-[2px] translate-y-[2px] bg-[#101111] rounded-2xl px-4 py-6 w-[100%]">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-3">
                 <div className="h-9 w-9 bg-gray-500 rounded-full"></div>
@@ -280,7 +280,7 @@ const Testimonial = () => {
           {/* box */}
           <div className="relative">
 
-          <div className="  border border-gray-400 bg-[#101111] rounded-2xl px-4 py-6 w-[450px] bg-gradient-to-r inline-block from-[var(--secondary)]  to-[var(--primary)]">
+          <div className="  border border-gray-400 bg-[#101111] rounded-2xl px-4 py-6 w-[100%] bg-gradient-to-r inline-block from-[var(--secondary)]  to-[var(--primary)]">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-3">
                 <div className="h-9 w-9 bg-gray-500 rounded-full"></div>
@@ -339,7 +339,7 @@ const Testimonial = () => {
               the{" "}
             </p>
           </div>
-          <div className="absolute top-0 translate-x-[2px] translate-y-[2px] bg-[#101111] rounded-2xl px-4 py-6 w-[450px]">
+          <div className="absolute top-0 translate-x-[2px] translate-y-[2px] bg-[#101111] rounded-2xl px-4 py-6 w-[100%]">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-3">
                 <div className="h-9 w-9 bg-gray-500 rounded-full"></div>
@@ -403,7 +403,7 @@ const Testimonial = () => {
           {/* box */}
           <div className="relative">
 
-          <div className="  border border-gray-400 bg-[#101111] rounded-2xl px-4 py-6 w-[450px] bg-gradient-to-r inline-block from-[var(--secondary)]  to-[var(--primary)]">
+          <div className="  border border-gray-400 bg-[#101111] rounded-2xl px-4 py-6 w-[100%] bg-gradient-to-r inline-block from-[var(--secondary)]  to-[var(--primary)]">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-3">
                 <div className="h-9 w-9 bg-gray-500 rounded-full"></div>
@@ -462,7 +462,7 @@ const Testimonial = () => {
               the{" "}
             </p>
           </div>
-          <div className="absolute top-0 translate-x-[2px] translate-y-[2px] bg-[#101111] rounded-2xl px-4 py-6 w-[450px]">
+          <div className="absolute top-0 translate-x-[2px] translate-y-[2px] bg-[#101111] rounded-2xl px-4 py-6 w-[100%]">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-3">
                 <div className="h-9 w-9 bg-gray-500 rounded-full"></div>
