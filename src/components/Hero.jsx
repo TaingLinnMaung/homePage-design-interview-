@@ -23,17 +23,19 @@ export default function HeroSection() {
   const gridUnitHeight = 100 / rows;
 
   return (
-    <section className="relative w-full h-screen bg-black text-white flex items-center justify-center overflow-hidden">
-      <div className="relative w-[90vw] max-w-7xl h-[80vh] border border-neutral-800 rounded-md">
+    <section className="relative w-full h-screen bg-black text-white flex items-center justify-center ">
+      <div className="relative w-[70vw] max-w-7xl h-[80vh] border border-neutral-800 rounded-md">
         {/* Grid lines */}
         {verticalLines}
         {horizontalLines}
 
         {/* Sparkles */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-xl">
+        <div
+          className={`absolute left-0 top-[57%] -translate-x-1/2 -translate-y-1/2 text-white text-xl`}
+        >
           ✦
         </div>
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 text-white text-xl">
+        <div className="absolute top-[12%] left-[82.6%]  text-white text-xl z-50">
           ✦
         </div>
 
