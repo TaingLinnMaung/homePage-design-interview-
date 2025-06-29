@@ -8,7 +8,8 @@ import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
-    <div className=" bg-[#101111] ">
+    <div className=" bg-[#101111] text-white">
+      {/* hello */}
       <NavBar></NavBar>
       <HeroSection></HeroSection>
       <Process></Process>
